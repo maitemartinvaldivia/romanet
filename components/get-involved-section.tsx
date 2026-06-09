@@ -55,9 +55,11 @@ export function GetInvolvedSection() {
             <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
               {t('getInvolved.description')}
             </p>
-            <p className="text-lg text-foreground font-medium mt-4">
-              {t('getInvolved.closing')}
-            </p>
+            {t('getInvolved.closing') && (
+              <p className="text-lg text-foreground font-medium mt-4">
+                {t('getInvolved.closing')}
+              </p>
+            )}
           </div>
         </div>
 
